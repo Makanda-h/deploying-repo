@@ -1,14 +1,14 @@
 from flask_restful import Api, Resource, reqparse
 from sqlalchemy.orm import joinedload
 from flask import request, jsonify
-from models import db, User, Student, Teacher, Course, Enrollment
-from schemas import (user_schema, student_schema, teacher_schema, 
+from myapp.models import db, User, Student, Teacher, Course, Enrollment
+from myapp.schemas import (user_schema, student_schema, teacher_schema, 
                      course_schema, enrollment_schema, ValidationError,
                      validate_user_data, validate_student_data, 
                      validate_teacher_data, validate_course_data, 
                      validate_enrollment_data)
 from flask_jwt_extended import jwt_required, create_access_token, get_jwt_identity, get_jwt
-from auth import role_required
+from myapp.auth import role_required
 
 api = Api()
 
