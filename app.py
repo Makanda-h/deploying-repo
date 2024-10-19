@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
-from myapp.models import db, User
-from myapp.resources import api
+from models import db, User
+from resources import api
 
 
 app = Flask(__name__)
