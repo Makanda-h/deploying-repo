@@ -1,5 +1,5 @@
-from app import app, db
-from models import User, Student, Teacher, Course, Enrollment
+from myapp.app import app, db
+from myapp.models import User, Student, Teacher, Course, Enrollment
 from werkzeug.security import generate_password_hash
 
 def seed_database():
